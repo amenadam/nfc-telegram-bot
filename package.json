@@ -1,14 +1,18 @@
 {
-  "name": "nfc-telegram-bot",
+  "name": "acelinks-chatbot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "date-fns": "^3.3.1",
-    "dotenv": "^16.3.1",
-    "firebase-admin": "^11.10.1",
-    "node-telegram-bot-api": "^0.61.0"
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "firebase-admin": "^13.2.0",
+    "node-telegram-bot-api": "^0.66.0"
   }
 }
