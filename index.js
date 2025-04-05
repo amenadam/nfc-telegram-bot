@@ -5,7 +5,7 @@ const { format } = require("date-fns");
 require("dotenv").config(); // For loading env variables
 
 // --- Firebase Setup ---
-const serviceAccount = require("/app/nfc.json");
+const serviceAccount = JSON.parse(process.env.NFC_CONFIG);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
