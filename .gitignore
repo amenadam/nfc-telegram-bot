@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Firebase service account key
+nfc.json
+
+# Logs
+logs/
+*.log
+
+# Mac system files
+.DS_Store
+
+# Optional: Railway build files
+dist/
