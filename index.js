@@ -72,7 +72,7 @@ async function handleOrder(chatId, text) {
     userState.address = text;
 
     const orderId =
-      "NFC-" + Math.random().toString(36).substr(2, 8).toUpperCase();
+      "ACECARD" + Math.random().toString(36).substr(2, 8).toUpperCase();
     const orderData = {
       name: userState.name,
       phone: userState.phone,
@@ -197,7 +197,7 @@ bot.on("message", async (msg) => {
       userStates[chatId].state = "awaiting_tracking";
       return bot.sendMessage(
         chatId,
-        "🔎 Enter your order ID (e.g., NFC-XXXXXX):"
+        "🔎 Enter your order ID (e.g., ACECARDXXXXXX):"
       );
     case "💬 Live Chat":
       return startLiveChat(chatId, userName);
